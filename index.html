@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> MTM6302 | Contact Form </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="container">
+
+            <div class="contacts-dp" id="contacts-dp">
+                <div class="contact-list" id="contacts">
+                    <h3 class="title">Contact List</h3>
+                </div>
+                <div class="contacts-input" id="contacts-input">
+                    <form class="form" id="form">
+                        <h3 class="title">Contact Us</h3>
+                        <div class="input-container">
+                            <label for="fname">First Name</label>
+                            <input type="text" name="fname" class="input"  id="fname" required>
+                            <span>Firstname</span>
+                        </div>
+                        <div class="input-container">
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lname" class="input" id="lname" required>
+                            <span>Lastname</span>
+                        </div>
+                        <div class="input-container">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" class="input"  id="email" required>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container">
+                            <label for="city">City</label>
+                            <input type="text" name="city" class="input"  id="city" required>
+                            <span>City</span>
+                        </div>
+                        <div class="input-container">
+                            <label for="province">Province</label>
+                            <input type="text" name="province" class="input"  id="province" required>
+                            <span>Province</span>
+                        </div>
+                        <input type="submit" value="Add Contact" class="button">
+                    </form>
+                </div>
+                
+            </div>
+            <div id="modal" class="modal">
+                <button class='closeBtn' id='closeBtn' >x</button>
+                <h3 class="title">Contact Details</h3>
+                <div class="details">
+                    <h2>First Name:</h2>
+                    <p id="fnamelbl" ></p>
+                    <h2>Last Name:</h2>
+                    <p id="lnamelbl" ></p>
+                    <h2>E-mail:</h2>
+                    <p id="emaillbl"></p>
+                    <h2>City:</h2>
+                    <p id="citylbl"></p>
+                    <h2>Province:</h2>
+                    <p id="provincelbl"></p>
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
